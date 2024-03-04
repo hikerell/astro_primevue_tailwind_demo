@@ -1,0 +1,20 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Studio from '@/components/studio.vue'
+
+const site = {
+	title: "Astro + Primevue + Tailwind Demo",
+	name: "Demo",
+	logo: "/favicon.svg",
+	developer: {
+		name: "@hikerell",
+		twitter: "https://twitter.com/hikerell",
+		github: "https://github.com/hikerell"
+	}
+}
+---
+<Layout site={site}>
+	<div class="h-full flex items-center justify-center">
+		<Studio client:load />
+	</div>
+</Layout>

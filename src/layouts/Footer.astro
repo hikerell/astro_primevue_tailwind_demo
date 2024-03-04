@@ -1,0 +1,7 @@
+--- 
+const { site = {} } = Astro.props;
+---
+<div class="flex flex-wrap gap-4 items-center justify-center bg-neutral-800 text-white px-8 py-4 m-0">
+    <span class="">{ site.developer.name }</span>
+    <span class="">Copyright © {(new Date()).getFullYear()}</span>
+</div>

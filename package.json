@@ -1,0 +1,20 @@
+{
+  "name": "astro-primevue-tailwind-demo",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.0.8",
+    "astro": "^4.4.9",
+    "primevue": "^3.49.1",
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.4.21"
+  }
+}

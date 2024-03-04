@@ -1,0 +1,36 @@
+---
+// import 'primevue/resources/primevue.min.css'
+// import 'primeicons/primeicons.css'
+// import 'primevue/resources/themes/lara-light-blue/theme.css'
+// import 'primeflex/primeflex.css'
+import Toast from 'primevue/toast'
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+
+const { site } = Astro.props;
+---
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href={site.logo} />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<link href="https://fonts.loli.net/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<title>{ site.title }</title>
+	</head>
+	<body class="min-w-screen min-h-screen flex flex-col">
+        <div class="w-full">
+            <Header site={site} />
+        </div>
+        <div class="flex-1 container mx-auto">
+            <slot />
+        </div>
+        <div class="w-full">
+            <Footer site={site} />
+        </div>
+	</body>
+</html>
